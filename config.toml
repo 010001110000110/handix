@@ -1,0 +1,7 @@
+# This file shows the default configuration of the application.
+
+# The name of the application.
+name = "Handix"
+
+# The address on which the HTTP server will listen.
+http_addr = "localhost:1234"

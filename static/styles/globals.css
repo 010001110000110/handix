@@ -1,0 +1,41 @@
+:root {
+  --color: #a9b1d6;
+  --background: #0d0e16;
+  --link: #9ece6a;
+  --visited: #bb9af7;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--color);
+  background-color: var(--background);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--title);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--visited)
+}
