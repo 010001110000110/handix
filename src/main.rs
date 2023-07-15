@@ -35,7 +35,7 @@ async fn main() -> anyhow::Result<()> {
 
     log::info!("starting HTTP server at http://{}", &opt.http_addr);
 
-    let _http_server = HttpServer::new(move || create_app(handlebars_ref.clone()))
+    HttpServer::new(move || create_app(handlebars_ref.clone()))
         .disable_signals()
         .keep_alive(KeepAlive::Os)
         .bind(&opt.http_addr)?
